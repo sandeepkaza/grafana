@@ -950,6 +950,7 @@ export interface PanelSpec {
   links: DashboardLink[];
   data: QueryGroupKind;
   vizConfig: VizConfigKind;
+  transparent: boolean;
 }
 
 export const defaultPanelSpec = (): PanelSpec => ({
