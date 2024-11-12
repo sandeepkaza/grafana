@@ -150,12 +150,11 @@ func TestPluginManager_Add_Remove(t *testing.T) {
 		})
 	})
 
-	t.Run("Can't update core or bundled plugin", func(t *testing.T) {
+	t.Run("Can't update coreg plugin", func(t *testing.T) {
 		tcs := []struct {
 			class plugins.Class
 		}{
 			{class: plugins.ClassCore},
-			{class: plugins.ClassBundled},
 		}
 
 		for _, tc := range tcs {

@@ -27,7 +27,7 @@ func TestStore_ProvideService(t *testing.T) {
 			return []plugins.PluginSource{
 				&fakes.FakePluginSource{
 					PluginClassFunc: func(ctx context.Context) plugins.Class {
-						return plugins.ClassBundled
+						return plugins.ClassExternal
 					},
 					PluginURIsFunc: func(ctx context.Context) []string {
 						return []string{"path1"}

@@ -15,7 +15,7 @@
     "@types/slate", // we don't want to continue using this on the long run, use Monaco editor instead of Slate
   ],
   includePaths: ["package.json", "packages/**", "public/app/plugins/**"],
-  ignorePaths: ["emails/**", "plugins-bundled/**", "**/mocks/**"],
+  ignorePaths: ["emails/**", "**/mocks/**"],
   labels: ["area/frontend", "dependencies", "no-changelog"],
   postUpdateOptions: ["yarnDedupeHighest"],
   packageRules: [
