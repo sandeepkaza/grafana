@@ -34,7 +34,7 @@ func TestSources_List(t *testing.T) {
 
 		ctx := context.Background()
 
-		require.Len(t, srcs, 6)
+		require.Len(t, srcs, 5)
 
 		require.Equal(t, srcs[0].PluginClass(ctx), plugins.ClassCore)
 		require.Equal(t, srcs[0].PluginURIs(ctx), []string{
